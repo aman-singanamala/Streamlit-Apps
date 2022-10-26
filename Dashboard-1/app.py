@@ -9,7 +9,7 @@ import streamlit as st
 from datetime import datetime
 
 
-df= pd.read_csv("Aggregated_Metrics_By_Video.csv")
+df= pd.read_csv("Aggregated_Metrics_By_Video.csv").iloc[1:, : ]
 
 st.write(df)
 
