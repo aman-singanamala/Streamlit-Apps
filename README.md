@@ -1,4 +1,4 @@
 # Streamlit-Dashboards
 
 
-[URL SHORTENER](https://aman-singanamala-streamlit-apps-url-shortnerapp-cjnrll.streamlitapp.com/)
+[URL SHORTENER](https://tinyurl.com/28qq4x24)
