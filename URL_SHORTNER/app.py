@@ -5,7 +5,7 @@ import pyshorteners as ps
 
 st.header("URL Shortener")
 
-st.image("i1.png")
+
 url= st.text_input("Enter your URL : (Example: http://example.com)", value="amansinganamala.medium.com/statistics-concepts-in-data-science-bffe06d56de6")
 
 ans= ps.Shortener().tinyurl.short(url)
