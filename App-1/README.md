@@ -9,7 +9,7 @@
 <br>
 <hr>
 
-<img src="dashboard.png">
+<img src="./../Images/dashboard.png">
 <hr>
 
 
