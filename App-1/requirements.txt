@@ -1,0 +1,3 @@
+pandas==1.4.4
+Plost==0.2.5
+streamlit==1.14.0
