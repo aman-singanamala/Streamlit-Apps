@@ -5,7 +5,7 @@
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tinyurl.com/28qq4x24)  
 
-<img width="400px" src="./Images/url_shortener.png">
+<img width="400px" src="./Images/url.png">
 
 <hr>
 
