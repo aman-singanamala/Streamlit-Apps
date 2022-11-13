@@ -11,41 +11,88 @@ e1, e2, e3 = st.columns(3)
 with c1:
     st.subheader("Dhanurasana")
     with st.expander("Dhanurasana"):
-        st.image("./Images/Dhanurasana.png")
+        #st.image("./Images/Dhanurasana.png")
+        st.markdown('''
+    <a href="https://docs.streamlit.io">
+        <img src="https://raw.githubusercontent.com/aman-singanamala/Streamlit-Apps/main/App-3/Images/Dhanurasana.png" />
+    </a>''',
+    unsafe_allow_html=True)
         
 with c2:
     st.subheader("Bhujangasana")
     with st.expander("Bhujangasana"):
-        st.image("./Images/Bhujangasana.png")       
+        st.markdown('''
+    <a href="https://docs.streamlit.io">
+        <img src="https://raw.githubusercontent.com/aman-singanamala/Streamlit-Apps/main/App-3/Images/Baddha%20Konasana.png /">
+    </a>''',
+    unsafe_allow_html=True)
+    
+         
 with c3:
     st.subheader("Padmasana")
     with st.expander("Padmasana"):
-        st.image("./Images/Padmasana.png")
+        st.markdown('''
+    <a href="https://docs.streamlit.io">
+        <img src="https://raw.githubusercontent.com/aman-singanamala/Streamlit-Apps/main/App-3/Images/Padmasana.png" />
+    </a>''',
+    unsafe_allow_html=True)
+        
         
 # Row-2
 with d1:
     st.subheader("Utthita Parsvakonasana")
     with st.expander("Utthita Parsvakonasana"):
-        st.image("./Images/Utthita Parsvakonasana.png")
+        st.markdown('''
+    <a href="https://docs.streamlit.io">
+        <img src="https://raw.githubusercontent.com/aman-singanamala/Streamlit-Apps/main/App-3/Images/Utthita%20Parsvakonasana.png" />
+    </a>''',
+    unsafe_allow_html=True)
+        
+        
 with d2:
     st.subheader("Surya Namaskar")
     with st.expander("Surya Namaskar"):
-        st.image("./Images/Surya Namaskar.png")
+        st.markdown('''
+    <a href="https://docs.streamlit.io">
+        <img src="https://raw.githubusercontent.com/aman-singanamala/Streamlit-Apps/main/App-3/Images/Surya%20Namaskar.png" />
+    </a>''',
+    unsafe_allow_html=True)
+       
 with d3:
     st.subheader("Siddhasana")
     with st.expander("Siddhasana"):
-        st.image("./Images/Siddhasana.png")
+        st.markdown('''
+    <a href="https://docs.streamlit.io">
+        <img src="https://raw.githubusercontent.com/aman-singanamala/Streamlit-Apps/main/App-3/Images/Siddhasana.png" />
+    </a>''',
+    unsafe_allow_html=True)
+        
 
 # Row-3
 with e1:
     st.subheader("Vrikshasana (Tree Pose)")
     with st.expander("Vrikshasana (Tree Pose)"):
-        st.image("./Images/Vrikshasana.png") 
+        st.markdown('''
+    <a href="https://docs.streamlit.io">
+        <img src="https://raw.githubusercontent.com/aman-singanamala/Streamlit-Apps/main/App-3/Images/Vrikshasana.png" />
+    </a>''',
+    unsafe_allow_html=True)
+        
 with e2:
     st.subheader("Baddha Konasana")
     with st.expander("Baddha Konasana"):
-        st.image("./Images/Baddha Konasana.png")    
+        st.markdown('''
+    <a href="https://docs.streamlit.io">
+        <img src="https://raw.githubusercontent.com/aman-singanamala/Streamlit-Apps/main/App-3/Images/Baddha%20Konasana.png" />
+    </a>''',
+    unsafe_allow_html=True)
+        
 with e3:
     st.subheader("Utkatasana")
     with st.expander("Utkatasana"):
-        st.image("./Images/Utkatasana.png")
+        st.markdown('''
+    <a href="https://docs.streamlit.io">
+        <img src="https://raw.githubusercontent.com/aman-singanamala/Streamlit-Apps/main/App-3/Images/Utkatasana.png" />
+    </a>''',
+    unsafe_allow_html=True)
+       
