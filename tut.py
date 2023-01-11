@@ -219,7 +219,7 @@ st.write("forms")
 
 with st.form("form"):
     st.write("**Order yout coffee**")
-     # Input widgets
+    # Input widgets
     coffee_bean_val = st.selectbox('Coffee bean', ['Arabica', 'Robusta'])
     coffee_roast_val = st.selectbox('Coffee roast', ['Light', 'Medium', 'Dark'])
     brewing_val = st.selectbox('Brewing method', ['Aeropress', 'Drip', 'French press', 'Moka pot', 'Siphon'])
