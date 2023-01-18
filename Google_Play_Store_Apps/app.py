@@ -7,6 +7,8 @@ st.set_page_config(layout="wide")
 
 # load your dataset
 df = pd.read_csv("google-play-store-apps/googleplaystore.csv")
+df.dropna(how='any', inplace=True)
+
 
 
 col1, col2 = st.columns(2)
@@ -104,7 +106,7 @@ labels= ['Instagram', 'WhatsApp Messenger',
        'Messenger – Text and Video Chat for Free', 'Facebook']
 values=[4,3,3,2]
 
-st.title("Pie Chart of Social Media Platforms")
+
 
 fig= px.pie(labels, values=values, names= labels, hole=0.5)
 st.plotly_chart(fig)
