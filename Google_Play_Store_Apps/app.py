@@ -96,8 +96,16 @@ st.plotly_chart(fig)
 
 
 
+# --------------------------------------------------------------
+import streamlit as st
+import plotly.express as px
 
+labels= ['Instagram', 'WhatsApp Messenger',
+       'Messenger – Text and Video Chat for Free', 'Facebook']
+values=[4,3,3,2]
 
+st.title("Pie Chart of Social Media Platforms")
 
-
-
+fig= px.pie(labels, values=values, names= labels, hole=0.5)
+st.plotly_chart(fig)
+# --------------------------------------------------------------
