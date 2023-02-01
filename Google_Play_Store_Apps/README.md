@@ -1,4 +1,4 @@
-# Insights from Dataset Analysis
+<!-- # Insights from Dataset Analysis
 
 ## Overview
 
@@ -8,5 +8,7 @@ This analysis was conducted on Google Playstore Applications, which contains may
 
 
 
-<iframe src="Google_Play_Store_Apps/finding1.html" width="800" height="600"></iframe>
+<!-- <iframe src="Google_Play_Store_Apps/finding1.html" width="800" height="600"></iframe> -->
 
+<!-- ![Graph Image](newplot.png)
+ --> -->
