@@ -70,9 +70,6 @@ st.write(fig2, use_container_width=True)
 
 
 
-
-
-
 # -----------------------------------------------------------------------------------
 # category vs rating
 fig = px.box(
@@ -87,9 +84,6 @@ fig.update_xaxes(gridcolor='lightgray', gridwidth=1)
 fig.update_yaxes(gridcolor='lightgray', gridwidth=1)
 st.plotly_chart(fig)
 # -----------------------------------------------------------------------------------
-
-
-
 
 
 

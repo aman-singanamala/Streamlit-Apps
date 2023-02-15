@@ -18,3 +18,27 @@
 
 <hr>
 <br> -->
+
+
+
+
+
+
+
+## About Me
+
+<p align="center"><img src="assets\Images\aman.jfif" width=200/> </p> 
+
+Hello 👋 
+I am Aman Singanamala, Computer Science Student pursuing my Bachelors degree at Vellore Institute of Technology.
+
+
+
+#### This is my Portfolio of collection of all Streamlit application I made
+
+
+
+
+
+
+
