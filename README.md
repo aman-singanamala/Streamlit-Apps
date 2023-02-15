@@ -46,7 +46,7 @@ I am Aman Singanamala, Computer Science Student pursuing my Bachelors degree at 
 ---
 
 
-## [1. URL Shortener](URL_SHORTENER\README.md) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tinyurl.com/28qq4x24)  
+## [1. URL Shortener](./URL_SHORTENER/README.md) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://tinyurl.com/28qq4x24)  
 
    - This used the streamlit framework anf PyShortners library to create a URL shortener web application.
    - Overall, this program provides a simple and user-friendly interface for generating shortened URLs using PyShorteners and Streamlit.
@@ -61,7 +61,7 @@ I am Aman Singanamala, Computer Science Student pursuing my Bachelors degree at 
 ---
 
 
-## [2. Weather Dashboard](Weather-Dashboard\README.md) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aman-singanamala-streamlit-apps-app-1app-lrxr52.streamlitapp.com/) 
+## [2. Weather Dashboard](./Weather-Dashboard/README.md) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aman-singanamala-streamlit-apps-app-1app-lrxr52.streamlitapp.com/) 
 
 
    - This Streamlit application provides the user with several functionalities for exploring and visualizing datasets.
@@ -77,7 +77,7 @@ I am Aman Singanamala, Computer Science Student pursuing my Bachelors degree at 
 ---
 ---
 
-## [3. Diabeted Predictor](Diabetes-Predictor\README.md) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aman-singanamala-streamlit-apps-diabetes-predictorapp1-dltfg9.streamlit.app/) 
+## [3. Diabeted Predictor](./Diabetes-Predictor/README.md) [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aman-singanamala-streamlit-apps-diabetes-predictorapp1-dltfg9.streamlit.app/) 
 
 
    - Web application that predicts the chances of a person getting diabetes using the Random Forest Classifier algorithm.
@@ -97,7 +97,7 @@ I am Aman Singanamala, Computer Science Student pursuing my Bachelors degree at 
 
 ---
 
-## [4. Analysis of Google Play Store Applications](Google_Play_Store_Apps\README.md)
+## [4. Analysis of Google Play Store Applications](./Google_Play_Store_Apps/README.md)
 
 
    - ***Insight-1*** : Most users gave a rating between 4 and 5 with a count of 7049. The average rating of applications
