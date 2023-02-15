@@ -1,5 +1,19 @@
 # Insights from Dataset Analysis
 
+   - ***Insight-1*** : Most users gave a rating between 4 and 5 with a count of 7049. The average rating of applications
+in the store is around 4 which is very high.
+
+   - ***Insight-2*** : The Game and Family categories are the most common in the store, while Beauty and Events are
+the least common.
+
+   - ***Insight-3*** : The ratings of applications in each category are relatively similar, with an average rating of over 4.
+
+   - ***Insight-4*** : Get apps with the most reviews, i.e., reviews greater than 50 million.
+
+   - ***Insight-5*** : The most common apps with the highest number of reviews are Facebook, WhatsApp Messenger,
+and Instagram, all of which fall under the Social and Communication categories.
+
+   - ***Insight-6*** : There is a strong correlation between the number of installs and reviews, indicating that higher the number of installations, the higher the number of reviews.
 
 # Overview
 
@@ -20,7 +34,7 @@ This analysis was conducted on Google Playstore Applications, which contains may
 </h2>
 
 
-<br><hr><br>
+
 
 
 <h2 style="color:#84cae8"> Insight-2
@@ -36,7 +50,7 @@ This analysis was conducted on Google Playstore Applications, which contains may
 
 
 
-<br><hr><br>
+
 
 
 <h2 style="color:#84cae8"> Insight-3
@@ -49,7 +63,7 @@ This analysis was conducted on Google Playstore Applications, which contains may
 </ul>
 </h2>
 
-<br><hr><br>
+
 
 
 <h2 style="color:#84cae8"> Insight-4
@@ -72,7 +86,7 @@ df_reviews= df[df['Reviews']> 50000000].sort_values(by=["Reviews"], ascending=Fa
 </h2>
 
 
-<br><hr><br>
+
 
 <h2 style="color:#84cae8"> Insight-5
 
@@ -104,7 +118,7 @@ df_reviews= df[df['Reviews']> 50000000].sort_values(by=["Reviews"], ascending=Fa
 
 
 
-<br><hr><br>
+
 
 
 <h2 style="color:#84cae8"> Insight-6
@@ -119,7 +133,7 @@ df_reviews= df[df['Reviews']> 50000000].sort_values(by=["Reviews"], ascending=Fa
 
 
 
-<br><hr><br>
+
 
 
 <h2 style="color:#84cae8"> Insight-7
@@ -136,3 +150,8 @@ df_reviews= df[df['Reviews']> 50000000].sort_values(by=["Reviews"], ascending=Fa
 
 
 
+
+
+
+
+# .....More
