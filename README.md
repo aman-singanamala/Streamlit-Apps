@@ -131,7 +131,9 @@ The analysis includes the following findings:
 
 The analysis is presented in two Streamlit apps, which can be accessed using the links provided above.
 
-## Modeling
+## Modeling 
+<iframe src="./Google_Play_Store_Apps/modeling.html" width="100%" height="500"></iframe>
+
 
 Model Selection and Hyperparameter Tuning
 
