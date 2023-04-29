@@ -31,9 +31,15 @@ fig1.update_yaxes(gridcolor='lightgray', gridwidth=1)
 # display the plot
 st.plotly_chart(fig1)
 
+st.write("### Finding-1")
+st.write("- Most users gave a rating between 4 and 5 with a count of 7049")
+st.write("- Average rating of the application in the store is around 4, which is very high")
+
+
 # -----------------------------------------------------------------------------------
 
-
+st.markdown("<hr>", unsafe_allow_html=True)
+st.markdown("<hr>", unsafe_allow_html=True)
 
 
 
@@ -69,6 +75,40 @@ st.write(fig2, use_container_width=True)
 
 
 
+st.write("### Finding-2")
+st.write("- Game and Family category are the most appearances for applications in the store.")
+st.write("- Beauty and Events are the least most appearances for applications in the store.")
+
+st.markdown("<hr>", unsafe_allow_html=True)
+st.markdown("<hr>", unsafe_allow_html=True)
+
+# Display the code to get unique values in the Category column
+st.write("### Column ['Category']")
+st.write("#### Get the unique values in the column with its frequency using the below code:")
+st.code("""categories=(df['Category'].value_counts())
+type(categories) ## to know its structure == Series type
+# convert the categories into a dataframe
+categories.to_frame()
+""", language='python')
+
+# Display the table with unique values and their frequencies
+st.write("### Output")
+categories = pd.DataFrame({
+    "Category": ["FAMILY", "GAME", "TOOLS", "PRODUCTIVITY", "MEDICAL", "COMMUNICATION", "FINANCE", "SPORTS", 
+                 "PHOTOGRAPHY", "LIFESTYLE", "PERSONALIZATION", "BUSINESS", "HEALTH_AND_FITNESS", "SOCIAL", "SHOPPING", 
+                 "NEWS_AND_MAGAZINES", "TRAVEL_AND_LOCAL", "DATING", "BOOKS_AND_REFERENCE", "VIDEO_PLAYERS", 
+                 "EDUCATION", "ENTERTAINMENT", "MAPS_AND_NAVIGATION", "FOOD_AND_DRINK", "HOUSE_AND_HOME", "WEATHER", 
+                 "AUTO_AND_VEHICLES", "LIBRARIES_AND_DEMO", "ART_AND_DESIGN", "COMICS", "PARENTING", "EVENTS", "BEAUTY"],
+    "Count": [1746, 1097, 733, 351, 350, 328, 323, 319, 317, 314, 312, 303, 297, 259, 238, 233, 226, 195, 178, 
+              160, 155, 149, 124, 109, 76, 75, 73, 64, 61, 58, 50, 45, 42]
+})
+st.write(categories)
+
+
+
+st.markdown("<hr>", unsafe_allow_html=True)
+st.markdown("<hr>", unsafe_allow_html=True)
+
 
 # -----------------------------------------------------------------------------------
 # category vs rating
@@ -89,6 +129,13 @@ st.plotly_chart(fig)
 
 
 
+st.write("### Finding-3")
+st.write("- The ratings of applications in each category are relatively similar, with an average rating above 4.")
+
+
+st.markdown("<hr>", unsafe_allow_html=True)
+st.markdown("<hr>", unsafe_allow_html=True)
+
 
 
 
@@ -105,3 +152,13 @@ values=[4,3,3,2]
 fig= px.pie(labels, values=values, names= labels, hole=0.5)
 st.plotly_chart(fig)
 # --------------------------------------------------------------
+
+
+
+st.write("### Finding-4")
+st.write("- Most applications in this store have less than 1 million reviews.")
+st.write("- Well-known applications have a lot of reviews.")
+
+
+st.markdown("<hr>", unsafe_allow_html=True)
+st.markdown("<hr>", unsafe_allow_html=True)

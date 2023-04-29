@@ -1,157 +1,61 @@
-# Insights from Dataset Analysis
+# Google Play Store App Analysis
+<p><img src="./PLOTS/dataset-cover.jpg" width=1000/></p>
 
-   - ***Insight-1*** : Most users gave a rating between 4 and 5 with a count of 7049. The average rating of applications
-in the store is around 4 which is very high.
+This project analyzes the Google Play Store apps dataset, which can be found on Kaggle [here](https://www.kaggle.com/lava18/google-play-store-apps). The analysis includes data cleaning, exploratory data analysis, and visualizations.
 
-   - ***Insight-2*** : The Game and Family categories are the most common in the store, while Beauty and Events are
-the least common.
+## Project Links
 
-   - ***Insight-3*** : The ratings of applications in each category are relatively similar, with an average rating of over 4.
+- ## GitHub Repository: https://github.com/aman-singanamala/SIN-JCOMP
+- ## Visualization Website 1: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aman-singanamala-sin-jcomp-vis-ni485h.streamlit.app)  
 
-   - ***Insight-4*** : Get apps with the most reviews, i.e., reviews greater than 50 million.
+- ## Visualization Website 2: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aman-singanamala-sin-jcomp-app-lih7o2.streamlit.app)  
+- ## Dataset: https://www.kaggle.com/datasets/lava18/google-play-store-apps
 
-   - ***Insight-5*** : The most common apps with the highest number of reviews are Facebook, WhatsApp Messenger,
-and Instagram, all of which fall under the Social and Communication categories.
 
-   - ***Insight-6*** : There is a strong correlation between the number of installs and reviews, indicating that higher the number of installations, the higher the number of reviews.
 
-# Overview
 
-<h3 style="color:#84cae8">
-This analysis was conducted on Google Playstore Applications, which contains may features. The purpose of this analysis is to uncover key trends and find useful insights from the data </h3>
+## Data Cleaning
 
+The dataset contained missing values and duplicates, which were handled using pandas methods. 
 
-# Insights
+## Exploratory Data Analysis
 
-<h2 style="color:#84cae8"> Insight-1
+The analysis includes the following findings:
 
-![Graph Image](/Google_Play_Store_Apps/PLOTS/plot1.png)
+- Most users gave a rating between 4 and 5 with a count of 7049.
+- The average rating of applications in the store is around 4 which is very high.
+- Game and Family category are the most appearances for applications in the store.
+- Beauty and Events are the least most appearances for applications in the store.
+- The ratings of applications in each category are relatively similar, with an average rating above 4.
+- Most applications in this store have less than 1 million reviews. Well-known applications have a lot of reviews.
 
-<ul>
-<li>Most users gave an rating between 4 and 5 with a count of 7049</li>
-<li>Average of rating of application in store is around 4 which is very high</li>
-</ul>
-</h2>
+## Visualization
 
+The analysis is presented in two Streamlit apps, which can be accessed using the links provided above.
 
+## Modeling
 
+Model Selection and Hyperparameter Tuning
 
+## Description
 
-<h2 style="color:#84cae8"> Insight-2
+We utilized the Support Vector Machine (SVM) algorithm as our model of choice due to its ability to handle high dimensional data and its effectiveness in classification tasks. We implemented the SVM model using scikit-learn's SVC class, which allows us to specify the kernel function and hyperparameters.
 
-![Graph Image](/Google_Play_Store_Apps/PLOTS/plot2.png)
+To optimize the performance of our SVM model, we employed a pipeline that consists of several steps:
 
-<ul>
-<li>Game and Family category are the most appearances for application in store</li>
-<li>Beauty and Events are the least most appearances for application in store</li>
-</ul>
-</h2>
+<b> 1. Custom Transformer:</b> This is a custom transformation step that applies a transformation to the data. We passed a parameter "5" to the Custom Transformer class to customize the transformation.
 
+<b> 2. StandardScaler: </b> This step scales the data to have zero mean and unit variance, which is an important step for many machine learning algorithms to work effectively.
 
+<b>3. GridSearchCV: </b> This step performs grid search cross-validation to find the best hyperparameters for the SVM model. We optimized the hyperparameters 'C', 'kernel', and 'gamma' with a range of values specified in the 'param_grid' dictionary. The model was trained using 5-fold cross-validation, and the best hyperparameters were selected based on the average test score.
 
+- After defining the pipeline, we fit the pipeline on the training data using the fit method. We then printed the results for each permutation of hyperparameters tested in the grid search using a for loop. The loop iterated over the mean_train_score, mean_test_score, and params values from the GridSearchCV results.
 
+- Finally, we printed the best score and best hyperparameters for the SVM model found during the grid search. This allowed us to select the optimal hyperparameters for our SVM model, which helped to improve its performance on the test data.
 
+- Overall, this approach for tuning hyperparameters for a machine learning model using cross-validation is a common and effective way to optimize model performance.
 
 
-<h2 style="color:#84cae8"> Insight-3
+## Conclusion
 
-![Graph Image](/Google_Play_Store_Apps/PLOTS/plot3.png)
-
-<ul>
-<li>The ratings of applications in each category are relatively similar. Above 4</li>
-
-</ul>
-</h2>
-
-
-
-
-<h2 style="color:#84cae8"> Insight-4
-
-![Graph Image](/Google_Play_Store_Apps/PLOTS/plot4.png)
-
-```python
-# Selecting rows from the DataFrame where the value in the 'Reviews' column is greater than 50000000.
-# Sorting the selected rows in descending order based on the value in the 'Reviews' column.
-# Assign the result to a new DataFrame named df_reviews
-df_reviews= df[df['Reviews']> 50000000].sort_values(by=["Reviews"], ascending=False)
-
-```
-
-<ul>
-
-<li>Get apps with most reviews   i.e. reviews>50000000</li>
-
-</ul>
-</h2>
-
-
-
-
-<h2 style="color:#84cae8"> Insight-5
-
-![Graph Image](/Google_Play_Store_Apps/PLOTS/plot5.png)
-
-<ul>
-<li>Game and Family category are the most appearances for application in store</li>
-<li>Beauty and Events are the least most appearances for application in store</li>
-</ul>
-</h2>
-
-
-|      | App                                      | Category      |   Rating |   Reviews | Size               | Installs       | Type   |   Price | Content Rating   | Genres        | Last Updated   | Current Ver        | Android Ver        |
-|-----:|:-----------------------------------------|:--------------|---------:|----------:|:-------------------|:---------------|:-------|--------:|:-----------------|:--------------|:---------------|:-------------------|:-------------------|
-| 2544 | Facebook                                 | SOCIAL        |      4.1 |  78158306 | Varies with device | 1,000,000,000+ | Free   |       0 | Teen             | Social        | August 3, 2018 | Varies with device | Varies with device |
-| 3943 | Facebook                                 | SOCIAL        |      4.1 |  78128208 | Varies with device | 1,000,000,000+ | Free   |       0 | Teen             | Social        | August 3, 2018 | Varies with device | Varies with device |
-|  336 | WhatsApp Messenger                       | COMMUNICATION |      4.4 |  69119316 | Varies with device | 1,000,000,000+ | Free   |       0 | Everyone         | Communication | August 3, 2018 | Varies with device | Varies with device |
-|  381 | WhatsApp Messenger                       | COMMUNICATION |      4.4 |  69119316 | Varies with device | 1,000,000,000+ | Free   |       0 | Everyone         | Communication | August 3, 2018 | Varies with device | Varies with device |
-| 3904 | WhatsApp Messenger                       | COMMUNICATION |      4.4 |  69109672 | Varies with device | 1,000,000,000+ | Free   |       0 | Everyone         | Communication | August 3, 2018 | Varies with device | Varies with device |
-| 2604 | Instagram                                | SOCIAL        |      4.5 |  66577446 | Varies with device | 1,000,000,000+ | Free   |       0 | Teen             | Social        | July 31, 2018  | Varies with device | Varies with device |
-| 2545 | Instagram                                | SOCIAL        |      4.5 |  66577313 | Varies with device | 1,000,000,000+ | Free   |       0 | Teen             | Social        | July 31, 2018  | Varies with device | Varies with device |
-| 2611 | Instagram                                | SOCIAL        |      4.5 |  66577313 | Varies with device | 1,000,000,000+ | Free   |       0 | Teen             | Social        | July 31, 2018  | Varies with device | Varies with device |
-| 3909 | Instagram                                | SOCIAL        |      4.5 |  66509917 | Varies with device | 1,000,000,000+ | Free   |       0 | Teen             | Social        | July 31, 2018  | Varies with device | Varies with device |
-|  382 | Messenger – Text and Video Chat for Free | COMMUNICATION |      4   |  56646578 | Varies with device | 1,000,000,000+ | Free   |       0 | Everyone         | Communication | August 1, 2018 | Varies with device | Varies with device |
-|  335 | Messenger – Text and Video Chat for Free | COMMUNICATION |      4   |  56642847 | Varies with device | 1,000,000,000+ | Free   |       0 | Everyone         | Communication | August 1, 2018 | Varies with device | Varies with device |
-| 4104 | Messenger – Text and Video Chat for Free | COMMUNICATION |      4   |  56642847 | Varies with device | 1,000,000,000+ | Free   |       0 | Everyone         | Communication | August 1, 2018 | Varies with device | Varies with device |
-
-
-
-
-
-
-
-
-<h2 style="color:#84cae8"> Insight-6
-
-![Graph Image](/Google_Play_Store_Apps/PLOTS/plot6.png)
-
-<ul>
-<li>Seem like well-known application will get a good rating</li>
-
-</ul>
-</h2>
-
-
-
-
-
-
-<h2 style="color:#84cae8"> Insight-7
-
-![Graph Image](/Google_Play_Store_Apps/PLOTS/plot7.png)
-
-<ul>
-<li>Seem like number of install affect to rating.  Applications with more installs have more ratings </li>
-
-</ul>
-</h2>
-
-
-
-
-
-
-
-
-
-# .....More
+This analysis provides insights into the Google Play Store apps dataset and can be used by developers and businesses to make data-driven decisions.
