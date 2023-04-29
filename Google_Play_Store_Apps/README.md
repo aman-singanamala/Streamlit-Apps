@@ -5,7 +5,7 @@ This project analyzes the Google Play Store apps dataset, which can be found on 
 
 ## Project Links
 
-- ## GitHub Repository: https://github.com/aman-singanamala/SIN-JCOMP
+
 - ## Visualization Website 1: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aman-singanamala-sin-jcomp-vis-ni485h.streamlit.app)  
 
 - ## Visualization Website 2: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aman-singanamala-sin-jcomp-app-lih7o2.streamlit.app)  
