@@ -105,7 +105,15 @@ I am Aman Singanamala, Computer Science Student pursuing my Bachelors degree at 
 
 - ## Visualization Website 1: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aman-singanamala-sin-jcomp-vis-ni485h.streamlit.app)  
 
+<iframe src="https://aman-singanamala-sin-jcomp-vis-ni485h.streamlit.app/" width="100%" height="500px"></iframe>
+
+
 - ## Visualization Website 2: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aman-singanamala-sin-jcomp-app-lih7o2.streamlit.app)  
+
+<iframe src="https://aman-singanamala-sin-jcomp-app-lih7o2.streamlit.app" width="100%" height="500px"></iframe>
+
+
+
 - ## Dataset: https://www.kaggle.com/datasets/lava18/google-play-store-apps
 - ## Modeling Notebook : 
 
